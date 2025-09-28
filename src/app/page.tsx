@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="bg-burgundy-gradient relative overflow-hidden">
         <div className="container mx-auto px-6 py-16 lg:py-24">
@@ -16,11 +16,12 @@ export default function Home() {
                 dishcovery
               </h1>
               <p className="text-xl lg:text-2xl text-wine-100 leading-relaxed">
-                Your personal recipe finder,<br />
+                Your personal recipe finder,
+                <br />
                 generator, and forum
               </p>
             </div>
-            
+
             {/* Right Content - Chef Illustration */}
             <div className="flex justify-center lg:justify-end">
               <div className="w-64 h-64 lg:w-80 lg:h-80 flex items-center justify-center">
@@ -40,7 +41,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12">
             What Dishcovery offers
           </h2>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {/* Search Recipes */}
             <div className="bg-burgundy-700 p-8 rounded-lg text-center">
@@ -49,18 +50,22 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold mb-4">SEARCH RECIPES</h3>
               <p className="text-wine-100 leading-relaxed">
-                Search through a vast collection of delicious recipes from around the world and find the perfect dish to match your taste preferences.
+                Search through a vast collection of delicious recipes from
+                around the world and find the perfect dish to match your taste
+                preferences.
               </p>
             </div>
 
-            {/* Generate Recipes */} 
+            {/* Generate Recipes */}
             <div className="bg-burgundy-600 p-8 rounded-lg text-center">
               <div className="mb-6">
                 <span className="text-4xl">✨</span>
               </div>
               <h3 className="text-xl font-bold mb-4">GENERATE RECIPES</h3>
               <p className="text-wine-100 leading-relaxed">
-                Get AI-generated customized recipe suggestions based on your dietary preferences, available ingredients, and cooking skill level.
+                Get AI-generated customized recipe suggestions based on your
+                dietary preferences, available ingredients, and cooking skill
+                level.
               </p>
             </div>
 
@@ -71,7 +76,9 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold mb-4">UPLOAD RECIPES</h3>
               <p className="text-wine-100 leading-relaxed">
-                Contribute to our growing collection by uploading your own family recipes and unique culinary creations to share with others.
+                Contribute to our growing collection by uploading your own
+                family recipes and unique culinary creations to share with
+                others.
               </p>
             </div>
           </div>
@@ -84,7 +91,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
             Popular Recipes
           </h2>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {/* Pasta */}
             <div className="group cursor-pointer">
@@ -94,7 +101,9 @@ export default function Home() {
                 </div>
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
               </div>
-              <h3 className="text-xl font-bold text-center text-burgundy-800">PASTA</h3>
+              <h3 className="text-xl font-bold text-center text-burgundy-800">
+                PASTA
+              </h3>
             </div>
 
             {/* Paneer Tikka */}
@@ -105,7 +114,9 @@ export default function Home() {
                 </div>
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
               </div>
-              <h3 className="text-xl font-bold text-center text-burgundy-800">PANEER TIKKA</h3>
+              <h3 className="text-xl font-bold text-center text-burgundy-800">
+                PANEER TIKKA
+              </h3>
             </div>
 
             {/* Veg Rolls */}
@@ -116,7 +127,9 @@ export default function Home() {
                 </div>
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
               </div>
-              <h3 className="text-xl font-bold text-center text-burgundy-800">VEG ROLLS</h3>
+              <h3 className="text-xl font-bold text-center text-burgundy-800">
+                VEG ROLLS
+              </h3>
             </div>
           </div>
         </div>
@@ -129,13 +142,33 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-bold mb-4">FOLLOW US</h3>
               <div className="flex space-x-4">
-                <a href="#" className="text-2xl hover:text-burgundy-400 transition-colors">📷</a>
-                <a href="#" className="text-2xl hover:text-burgundy-400 transition-colors">👥</a>
-                <a href="#" className="text-2xl hover:text-burgundy-400 transition-colors">📌</a>
-                <a href="#" className="text-2xl hover:text-burgundy-400 transition-colors">✕</a>
+                <a
+                  href="#"
+                  className="text-2xl hover:text-burgundy-400 transition-colors"
+                >
+                  📷
+                </a>
+                <a
+                  href="#"
+                  className="text-2xl hover:text-burgundy-400 transition-colors"
+                >
+                  👥
+                </a>
+                <a
+                  href="#"
+                  className="text-2xl hover:text-burgundy-400 transition-colors"
+                >
+                  📌
+                </a>
+                <a
+                  href="#"
+                  className="text-2xl hover:text-burgundy-400 transition-colors"
+                >
+                  ✕
+                </a>
               </div>
             </div>
-            
+
             <div className="text-right">
               <div className="flex items-center justify-end space-x-4">
                 <div>
@@ -150,7 +183,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          
+
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
             © 2024 Dishcovery. All rights reserved.
           </div>

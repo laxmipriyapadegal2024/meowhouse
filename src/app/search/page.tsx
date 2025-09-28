@@ -12,7 +12,7 @@ export default function SearchPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
-      
+
       {/* Search Section */}
       <section className="bg-burgundy-gradient py-12">
         <div className="container mx-auto px-6">
@@ -24,12 +24,22 @@ export default function SearchPage() {
                 className="w-full px-6 py-4 rounded-full text-lg border-2 border-white/20 bg-white/90 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/50 placeholder-gray-500"
               />
               <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-burgundy-700 text-white p-3 rounded-full hover:bg-burgundy-800 transition-colors">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
                 </svg>
               </button>
             </div>
-            
+
             <div className="text-center mt-4">
               <span className="text-white/80 text-sm">570+</span>
             </div>
@@ -43,7 +53,9 @@ export default function SearchPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {categories.map((category, index) => (
               <div key={index} className="group cursor-pointer">
-                <div className={`relative overflow-hidden rounded-full mb-3 aspect-square bg-gradient-to-br ${category.color} flex items-center justify-center group-hover:scale-105 transition-transform`}>
+                <div
+                  className={`relative overflow-hidden rounded-full mb-3 aspect-square bg-gradient-to-br ${category.color} flex items-center justify-center group-hover:scale-105 transition-transform`}
+                >
                   <span className="text-4xl md:text-5xl">{category.emoji}</span>
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
                 </div>

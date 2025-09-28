@@ -2,17 +2,17 @@ import type { Metadata } from 'next';
 import { Inter, Dancing_Script, Playfair_Display } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
 });
 
-const dancingScript = Dancing_Script({ 
+const dancingScript = Dancing_Script({
   subsets: ['latin'],
   variable: '--font-dancing-script',
 });
 
-const playfairDisplay = Playfair_Display({ 
+const playfairDisplay = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-playfair-display',
 });
@@ -29,7 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${dancingScript.variable} ${playfairDisplay.variable} font-sans`}>
+      <body
+        className={`${inter.variable} ${dancingScript.variable} ${playfairDisplay.variable} font-sans`}
+      >
         {children}
       </body>
     </html>

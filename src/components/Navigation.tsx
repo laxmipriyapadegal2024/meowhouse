@@ -21,26 +21,33 @@ export default function Navigation() {
 
         {/* Navigation Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className="text-gray-700 hover:text-burgundy-700 font-medium transition-colors"
           >
             home
           </Link>
-          <Link 
-            href="/search" 
+          <Link
+            href="/search"
             className="text-gray-700 hover:text-burgundy-700 font-medium transition-colors"
           >
             search
           </Link>
-          <Link 
-            href="/generate" 
+          <Link
+            href="/generate"
             className="text-gray-700 hover:text-burgundy-700 font-medium transition-colors"
           >
             generate
           </Link>
-          <Link 
-            href="/write" 
+          <Link
+            href="/chat"
+            className="text-gray-700 hover:text-burgundy-700 font-medium transition-colors flex items-center space-x-1"
+          >
+            <span>chat</span>
+            <span className="text-sm">🤖</span>
+          </Link>
+          <Link
+            href="/write"
             className="text-gray-700 hover:text-burgundy-700 font-medium transition-colors"
           >
             write
@@ -88,11 +95,17 @@ export default function Navigation() {
             <div className="mt-6 text-center">
               <p className="text-xs text-gray-500">
                 By continuing, you agree to our{' '}
-                <Link href="/terms" className="text-burgundy-700 hover:underline">
+                <Link
+                  href="/terms"
+                  className="text-burgundy-700 hover:underline"
+                >
                   Terms of Service
                 </Link>{' '}
                 and{' '}
-                <Link href="/privacy" className="text-burgundy-700 hover:underline">
+                <Link
+                  href="/privacy"
+                  className="text-burgundy-700 hover:underline"
+                >
                   Privacy Policy
                 </Link>
               </p>
